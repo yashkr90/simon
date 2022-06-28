@@ -273,12 +273,12 @@ function gameover() {
 
 function playbuttonanimsnd(randomChosenColour) {
     let classofclr = "." + randomChosenColour;
-
+    $(classofclr).fadeOut(100).fadeIn(100);
     let soundtoplay = "sounds/" + randomChosenColour + ".mp3";
     var sound = new Audio(soundtoplay);
     sound.play();
 
-    $(classofclr).fadeOut(100).fadeIn(100);
+    
 
 }
 
