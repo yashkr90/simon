@@ -41,9 +41,7 @@ $(".back").on("click",function(){
         $("."+currentDiffLvl).addClass("displayclass");
     });
 
-    // setTimeout(function () {
-        
-    // }, 500);
+    
     setTimeout(function () {
         $(".container2").removeClass("displayclass");
         $(".container2").slideDown();
@@ -73,8 +71,7 @@ function ChooseDifficulty(difficultyClicked){
             colours = ["red", "green", "yellow", "blue"];
             console.log(colours);
             currentDiffLvl="lvl1";
-            // $(".container2").slideUp();
-            // $(".container2").addClass("displayclass");
+            
             $(".container2").slideUp("normal", function(){
                 $(".container2").addClass("displayclass");
                 
@@ -84,14 +81,7 @@ function ChooseDifficulty(difficultyClicked){
                 $(this).addClass('lvl1pattern'); //or any other class
             }).fadeIn(2000);
             
-            // $(".lvl1").addClass("lvl1pattern");
-            // $(".lvl1").removeClass("displayclass");
             
-            // setTimeout(function () {
-            //     $(".lvl1").fadeIn("lvl1pattern");
-            // }, 400);
-            
-            // $(".lvl1").fadeIn("lvl1pattern");
             setTimeout(function () {
                 playgame();
             }, 1000);
@@ -111,12 +101,7 @@ function ChooseDifficulty(difficultyClicked){
             }).fadeIn(1000);
            
 
-            // $(".lvl2").addClass("lvl2pattern");
-            // $(".lvl2").removeClass("displayclass");
             
-            // setTimeout(function () {
-            //     $(".lvl2").fadeIn("lvl2pattern");
-            // }, 400);
             setTimeout(function () {
                 playgame();
             }, 1000);
@@ -128,8 +113,7 @@ function ChooseDifficulty(difficultyClicked){
             colours = ["red", "green", "yellow", "blue", "orange", "purple"];
             console.log(colours);
             currentDiffLvl="lvl3";
-            // $(".container2").slideUp();
-            // $(".container2").addClass("displayclass");
+            
             $(".container2").slideUp("normal", function(){
                 $(".container2").addClass("displayclass");
             });
@@ -138,13 +122,7 @@ function ChooseDifficulty(difficultyClicked){
                 $(this).addClass("lvl3pattern"); //or any other class
             }).fadeIn(2000);
            
-
-            // $(".lvl3").addClass("lvl3pattern");
-            // $(".lvl3").removeClass("displayclass");
-              
-            // setTimeout(function () {
-            //     $(".lvl3").fadeIn("lvl3pattern");
-            // }, 400);          
+          
             setTimeout(function () {
                 playgame();
             }, 1000);
